@@ -1,2 +1,2 @@
-# AbdulMoeed-140212.Earth3D.github.io
+# AbdulMoeed-140212.github.io
 three.js  
