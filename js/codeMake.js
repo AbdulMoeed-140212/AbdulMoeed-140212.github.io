@@ -56,7 +56,7 @@ function init(){
 	
 	raycaster = new THREE.Raycaster();
 
-	var texture = new THREE.TextureLoader().load( 'images/map10k.jpg' );
+	var texture = new THREE.TextureLoader().load( 'images/map1k.jpg' );
 	texture.miniFilter = THREE.LinearMipMapNearestFilter
 
 	var geometry = new THREE.SphereBufferGeometry( 1, 32, 32 );
