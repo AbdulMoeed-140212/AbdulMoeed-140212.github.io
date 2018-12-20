@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Earth</title>
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+	<style>
+		body { margin: 0;overflow: hidden;}
+		canvas { width: 100%; height: 100% }
+		.text{
+			color: #fff;
+			font-size: 11;
+			font-family: 'Chakra Petch', sans-serif;
+		}
+		#infoBox{
+			position: absolute;
+			top: 40px;
+			left : 40px;
+			/*width: 100%;*/
+			text-align: left;
+			z-index: 100;
+			display:block;
+			padding: 3px;
+		}
+		
+		button{
+			width :100%;
+			border: 0;
+			padding: 5px;
+			border: 1px solid black;
+		}
+		button:hover{
+			transform: translateX(10px);
+			
+		}
+		button:active{
+			transform: translateY(4px) translateX(10px);
+		}
+		.btn-active{
+			background-color: green
+		}
+		.btn-deactive{
+			background-color: white
+		}
+		#play-mode{
+			color : white;
+			padding: 5px;
+			margin-top: 5px;
+			background-color: balck;
+			box-shadow: 1px 1px 5px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="infoBox" class="text">
+		<div><button id="playMode" class="btn-deactive">Play</button></div>
+		<div><button id="makeSeq" class="btn-deactive">Make a Sequence</button></div>
+		<div><button id="expMode"  class="btn-deactive">Explore Mode</button></div>
+		<div><button id="radWatch" class="btn-deactive">Radar Watch</button></div>
+		<div id="long"></div>
+		<div id="lat"></div>
+		<div id="alt"></div>
+		<div id="alt-max"></div>
+		<div id="alt-min"></div>
+		<div id="alt-avg"></div>
+		<div id="play-mode"></div>
+	</div>
+	
+	<script type="text/javascript" src="js/lib/three.js"></script>
+	<script type="text/javascript" src="js/lib/controls/OrbitControls.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+</body>
+</html>
