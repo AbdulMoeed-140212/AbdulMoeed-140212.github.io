@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AreaDice 3d</title>
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<style type="text/css">
+	body{
+		text-align: center;
+	}
+	#gameover{
+		display: none
+	}
+	</style>
+</head>
+<body>
+	<!-- <button onclick="gameOver()"></button> -->
+	<div id="orth">
+		<div class="gridRow">
+			<div class="gridClass"></div>
+			<div class="gridClass"></div>
+			<div class="gridClass"></div>
+			<div class="gridClass"></div>
+		</div>
+	</div>
+	<div style="position: absolute; left: 50%; top: 20%" id="mainpage" class="scale-transition scale-out">
+    	<div style="position: relative; left: -50%;" class="">
+    		<div class="row">
+			    <div class="col">
+			      <div class="card">
+			        <div >
+			          
+			          <h4 class="card-title">Plot Invade </h4>
+			        </div>
+			        <div class="card-content">
+			          
+			          <p id="score"><b>Instructions : </b> Place your <i>Boxes</i> as Flat to ground as possible, <br/> Score = Area - Height <br/> Boxes will appear Randomly*<br/> Game will end when new Box cannot fit on the Field or Filed is Full<br/>Use Mouse to control camera</p>
+			          <p>UP , DOWN , LEFT , RIGHT cursor keys to roll box</p>
+			          <p>Space bar to Fix it in that place</p>
+			          <h4 id="gameover" class="card-title red-text text-darken-4">Game OVER!</H1>
+			        </div>
+			        <div class="card-action">
+			          <button id="startbtn" class="waves-effect waves-green btn btn-large">Start Game</button>
+			        </div>
+			      </div>
+			    </div>
+		  	</div>
+			
+			
+		</div>
+	</div>
+	<div id="canvas"></div>
+</body>
+<script type="text/javascript" src="//mrdoob.github.io/stats.js/build/stats.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script type="text/javascript" src="js/lib/three.js"></script>
+<script type="text/javascript" src="js/lib/controls/OrbitControls.js"></script>
+<script type="text/javascript" src="js/box.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
